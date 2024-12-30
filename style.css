@@ -1,0 +1,192 @@
+*{
+   
+    text-decoration: none;
+    list-style: none;
+    font-family:cursive;
+
+}
+body{
+    background-color:#65696f;
+}
+
+a{
+    color:#FFFFFF;
+    /* font-weight: bold; */
+}
+
+.header2{
+   display: flex;
+   flex-direction: column;
+}
+h1{
+    display: flex;
+    justify-content: left;
+   position: relative;
+   line-height: 20px;
+   font-size: vh;
+
+   padding: ;
+   color:#F5DDDD;
+  
+}
+
+
+
+ul{
+   
+    height: 2.2rem;
+    display: flex;
+    gap: 3rem;
+   justify-content: center;
+   align-items: center;
+   background-color:#433d45;
+  
+   font-size: 0.9rem;
+   border-radius: 10px;
+  
+}
+li{
+flex-wrap: nowrap;
+
+
+   
+  
+}
+form{
+
+    position: relative;
+    left: -40px;
+    background-color: #F5DDDD;
+    transform: translate(30%);
+    transition: all 1s ;
+    width: 1rem;
+    height:1.6rem ;
+    box-sizing: border-box;
+    border-radius:20px ;
+    border: 1px  solid #F5DDDD;
+    padding:   10px 20px ;
+
+}
+input{
+    position: absolute;
+    top:0;
+    left:0;
+    
+    width: 100%;
+    outline: 0;
+    border: 0;
+    line-height:30px ;
+    display:none  ;
+    font-size: 1em;
+    border-radius: 25px;
+    background-color: #F5DDDD;
+    
+   
+
+}
+.fas{
+    box-sizing: content-box;
+    position:absolute;
+    top :3px;
+    right: 9px;
+    text-align: center;
+    font-size:1.2em ;
+    transform: all 1s;
+    
+    
+   
+}
+.fas:hover{
+    cursor: pointer;
+}
+form:hover{
+    width: 200px;
+    cursor: text;
+
+}
+form:hover input{
+ display: block;
+}
+li:hover{
+   
+    border: 10px #F5DDDD solid;
+    transition: .2s;
+    border-radius: 100px ;
+    color: black;
+    background-color: #F5DDDD;
+
+}
+ .shop:hover{
+    border: 5px #F5DDDD solid;
+    transition: .2s;
+    border-radius: 100px ;
+    color: black;
+    background-color: #F5DDDD;
+
+ }
+ .sign:hover{
+    border: 5px #F5DDDD solid;
+    transition: .2s;
+    border-radius: 100px ;
+    color: black;
+    background-color: #F5DDDD;
+ }
+ .main{
+    display: flex;
+    flex-direction: column;
+   gap: 5px;
+    
+ }
+
+
+@media (max-width:800px) {
+    .header2{
+        text-align: center;
+        border-bottom: #F5DDDD 5px solid;
+        padding-bottom: 50px;
+    }
+    ul {
+        gap: 20px;
+        position: relative;
+        bottom: 1rem;
+         flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 6rem;
+        height: fit-content;
+        padding-left: 20px;
+         border-radius: 25px;
+         padding-top: 30px;
+        
+    }
+    form{
+        margin-left: 17px;
+        margin-bottom: 15px;
+
+
+    }
+    form:hover{
+        width: 6rem;
+        cursor: text;
+        transform: translate(10%,10%);
+        margin-top: 10px;
+    
+    }
+    .shop{
+        margin-left: -14px;
+    }
+    .sign{
+        margin-left: -10px;
+    }
+    
+    
+    .main{
+      width: 20rem;
+     
+        position: relative;
+        bottom: 80dvh;
+        left: 145px;
+       
+        
+    }
+}
